@@ -6,11 +6,11 @@ A Python tool for detecting and reading license plates in real time using comput
 
 This project combines object detection, OCR, and optional drone control.  
 It can:
-- Detect license plates in video streams and read them using multiple OCR engines.
-- Detect vehicles in the environment for potential obstacle avoidance.
-- Run drone flight tests to confirm car detection triggers.
+- Detect license plates from video streams and read them using multiple OCR engines.
+- Spot vehicles in the environment for obstacle avoidance.
+- Run drone flight tests to check if car detection triggers work as intended.
 
-The system uses a YOLOv5-based detector for spotting license plates, EasyOCR and a fast ONNX-based recognizer for text recognition, and Tesseract as a fallback. Preprocessing steps like contrast enhancement, deskewing, and filtering help improve recognition accuracy.
+The system uses a YOLOv5-based detector to locate license plates, then reads them with EasyOCR and a fast ONNX-based recognizer, falling back to Tesseract if needed. Preprocessing steps like contrast enhancement, deskewing, and filtering help improve recognition accuracy and reliability.
 
 ## Features
 
